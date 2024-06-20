@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Convert Video{% endblock %} {% block content %}
+<div class="convert-form">
+    <h2>Convert Video</h2>
+    <form action="{{ url_for('convert_video') }}" method="POST">
+        <label for="format">Choose format:</label>
+        <select name="format" required id="format">
+            <option value="mp4">MP4</option>
+            <option value="avi">AVI</option>
+            <option value="mov">MOV</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+    <br>
+    <form action="{{ url_for('logout') }}" method="POST">
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+</div>
+{% endblock %}

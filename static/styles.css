@@ -1,0 +1,155 @@
+/* Reset some basic elements for better cross-browser styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/static/good-background-cuj8yqopxpxvsbou.jpg')no-repeat center center/cover;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.auth-form,
+.dashboard,
+.convert-form {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="file"],
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.flashes {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.flash {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: left;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+.flash.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.flash.danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.flash.info {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* Example CSS for logout button */
+
+.btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}

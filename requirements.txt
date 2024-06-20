@@ -1,0 +1,2 @@
+pip install Flask Flask-Login Flask-SQLAlchemy Flask-Mail moviepy
+pip install ffmpeg-python
